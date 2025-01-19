@@ -1,0 +1,150 @@
+:root {
+    
+    /* Yellow */
+    --yellow: #f4d04e;
+
+    /* Gray */
+    --gray-950: #111;
+    --gray-500: #6b6b6b;
+
+    /* White */
+    --white: #fff;
+}
+
+/* Typography */
+.text-present-1, .text-present-2, .text-present-3, .text-present-3-bold{
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+.text-present-1, .text-present-3-bold {
+    font-weight: 800;
+}
+
+.text-present-2, .text-present-3 {
+    font-weight: 500;
+}
+
+.text-present-1{
+    font-size: 24px;
+}
+
+.text-present-2 {
+    font-size: 16px;
+}
+
+.text-present-3, .text-present-3-bold {
+    font-size: 14px;
+}
+
+/* general config */
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    font-family: "Figtree", serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--yellow);
+}
+
+a{
+    text-decoration: none;
+}
+
+.container, .content .decription, .content .decription .text-description, .content .decription .text-description span {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.content {
+    width: 70%;
+    max-width: 385px;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 24px;
+    border: 1px solid var(--gray-950);
+    box-shadow: 6px 6px 0px var(--gray-950);
+}
+
+.content .img-content {
+    width: 100%;
+    height: 200px;
+    background: url(../assets/images/illustration-article.svg) no-repeat center / cover;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.content .decription {
+    gap: 24px;
+}
+
+.content .decription .text-description {
+    gap: 12px;
+}
+
+.content .decription .text-description span, .content .decription .text-description .published,  .content .decription .text-description a {
+    color: var(--gray-950);
+}
+
+.content .decription .text-description a {
+    transition: .5s;
+}
+
+.content .decription .text-description a:hover {
+    color: var(--yellow);
+}
+
+.content .decription .text-description span {
+    background-color: var(--yellow);
+    width: 76px;
+    height: 26px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.content .decription .text-description .paragrapho {
+    color: var(--gray-500);
+}
+
+.content .decription .user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.content .decription .user .img-greg {
+    background: url(../assets/images/image-avatar.webp) no-repeat center / cover;
+    width: 32px;
+    height: 32px;
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+}
+
+.attribution a {
+    line-height: 150%;
+    letter-spacing: 0;
+    font-weight: 800;
+    color: var(--gray-950);
+    transition: .5s;
+}
+
+.attribution a:hover {
+    color: var(--gray-500);
+}
